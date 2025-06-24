@@ -1,0 +1,247 @@
+:root {
+  --color-black: #0E0E0E;
+  --color-white: #F8F8F8;
+  --color-blue: #0928be;
+  --color-blanc-casse: rgb(237, 226, 203);
+  --color-dark-gray: #1C1C1C;
+  --color-bordure: #745c3c;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Liens normaux dans le contenu */
+a {
+  text-decoration: none;
+}
+
+h2{
+  font-size: 50px;
+}
+
+/* Boutons */
+button {
+  color: var(--color-white);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: var(--color-blue);
+}
+
+input:focus,
+textarea:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: var(--color-black);
+}
+
+/*HERO*/
+
+/* Header */
+header {
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 10vh;
+  font-size: 25px;
+  z-index: 1;
+  transition: background-color 0.3s ease;
+  background: transparent;
+}
+
+/* Style après scroll */
+header.scrolled {
+  background: rgba(26, 26, 26, 0.807); 
+  backdrop-filter: blur(10px);
+}
+
+header nav a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+header nav a:hover {
+  color: var(--color-blanc-casse);
+  text-decoration: underline;
+}
+
+header h1{
+  color: var(--color-blanc-casse);
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: rgba(248, 248, 248, 0.877); 
+  backdrop-filter: blur(10px);    /* Pour effet verre dépoli. Très utilisé sur les sites web. */
+  width: 50vw;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/*End header*/
+.hero{ 
+   color: var(--color-white);  
+}
+
+.hero-background {
+  background-image: url('img/hero.webp');
+  background-size:cover;
+  background-attachment: fixed;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.hero-content a{
+  background-color: var(--color-blanc-casse);
+}
+
+/*DESTINATIONS*/
+.card {
+  height: 500px;
+  overflow: hidden;
+  transition: opacity 0.3s ease-in-out;
+
+}
+
+.rate{
+  color: gold;
+  font-size: 20px;
+}
+
+.card-img-top{
+  width: 100%;
+  height: 100%;
+  transition: filter 0.3s ease, padding 0.3s ease-in-out;
+
+}
+
+.card:hover .card-img-top{
+  filter: brightness(50%);
+}
+
+
+.card-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.card:hover .card-body{
+  opacity: 1;
+}
+
+.card a{
+  background-color: var(--color-blanc-casse);
+  text-decoration: none;
+}
+
+/*TOURS*/
+.accordion-button {
+  background-color: transparent; 
+}
+
+.accordion-button:hover {
+  background-color: var(--color-blanc-casse); 
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--color-blanc-casse); 
+
+}
+
+.accordion-button:focus {
+  box-shadow: none ;
+  border-color: transparent ;
+  outline: none ;
+}
+
+
+.trapeze {
+  width: 300px;
+  height: 200px;
+  background: #3498db;
+  clip-path: polygon(20% 0, 80% 0, 100% 100%, 0% 100%);
+}
+
+/*CONTACT*/
+.card-form{
+  border-radius: 5px;
+  border: 2px solid var(--color-bordure);
+}
+
+/*FOOTER*/
+footer{
+  padding: 1rem 1rem;
+  background-color: var(--color-blanc-casse);
+  color: var(--color-black);
+
+}
+
+
+#topButton {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--color-blanc-casse);
+}
+
+.fa-linkedin    {color: #007bff;}
+.fa-github      {color: black;}
+.fa-instagram   {color: palevioletred;}
+
+.fa-github, .fa-instagram, .fa-linkedin {
+  font-size: 24px;
+  margin: 0 10px;
+}
+@media (max-width: 426px) {
+  .hero h1, .hero h3{
+    font-weight: bold;
+    color: var(--color-white);
+   
+    
+  }
+
+  .hero-background{
+    background-attachment: scroll;
+  }
+
+  .card-body {
+    opacity: 1;
+}
+    .card-img-top{
+    filter: brightness(50%);
+  }
+
+
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+  header{
+    font-size: 22px;  
+
+  }
+}

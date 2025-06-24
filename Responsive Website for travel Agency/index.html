@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World village</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />    <link href="style.css" rel="stylesheet" />
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <section class="container-fluid d-flex flex-column hero p-0" id="hero">
+        <div class="hero-background"></div>
+        <header class="container-fluid position-fixed d-flex justify-content-between px-md-4">
+            <h1 class="mt-3">World Village</h1>
+            <nav class="mt-3">
+                <ul class="d-none d-md-flex list-unstyled">
+                    <li class="mx-4"><a class="text-decoration-none" href="#hero">Home</a></li>
+                    <li class="mx-4"><a class="text-decoration-none" href="#destinations">Destinations</a></li>
+                    <li class="mx-4"><a class="text-decoration-none" href="#tours">Tours</a></li>
+                    <li class="mx-4"><a class="text-decoration-none" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <nav class="navbar navbar-expand-lg navbar-light d-md-none">
+                <a class="navbar-toggler border-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </a>
+                <div class="collapse navbar-collapse mobile-menu" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="text-decoration-none text-dark" href="#hero">Home</a>
+                        <a class="text-decoration-none text-dark" href="#destinations">Destinations</a>
+                        <a class="text-decoration-none text-dark" href="#tours">Tours</a>
+                        <a class="text-decoration-none text-dark" href="#contact">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="top-50 position-absolute align-self-center text-center hero-content">
+            <h1>Explore the World with Us</h1>
+            <p class="lead">Custom travel experiences across the globe.</p>
+            <a href="#tours" class="btn btn-lg mt-3">Start Your Journey</a>
+        </div>
+    </section>
+
+    <section class="container destinations mt-5" id="destinations">
+        <h1>Top destinations</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/shibuya.webp" class="card-img-top" alt="Shibuya">
+                    <div class="card-body">
+                        <h5 class="card-title">Shibuya, Japan</h5>
+                        <p class="rate">★★★★★</p>
+
+                        <p class="card-text">Explore the iconic Shibuya crossing, surrounded by neon lights, shopping,
+                            and Japanese pop culture.</p>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/singapore.webp" class="card-img-top" alt="Singapour">
+                    <div class="card-body">
+                        <h5 class="card-title">Singapore</h5>
+                        <p class="rate">★★★★☆</p>
+
+                        <p class="card-text">Discover a futuristic city of sky gardens, skyscrapers, and diverse
+                            culinary delights.</p>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/capetown.webp" class="card-img-top" alt="Le Cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Cape Town, South Africa</h5>
+                        <p class="rate">★★★★☆</p>
+                        <p class="card-text">Marvel at Table Mountain, wild beaches, and the vibrant cultural mix of
+                            South Africa.</p>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container tours mt-5" id="tours">
+        <h1 class="mb-4">Our Tour Packages</h1>
+        <div class="accordion" id="accordionExample">
+
+            <!-- Forfaits pour Shibuya -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingShibuya">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseShibuya" aria-expanded="true" aria-controls="collapseShibuya">
+                        Pop Culture Trip – 6 Days in Shibuya, Japan
+                    </button>
+                </h2>
+                <div id="collapseShibuya" class="accordion-collapse collapse show" aria-labelledby="headingShibuya"
+                    data-bs-parent="#accordionTours">
+                    <div class="accordion-body">
+                        Discover Tokyo’s vibrant districts: Shibuya, Akihabara, and Harajuku. Visit anime studios,
+                        museums, and dive into Japanese culture.
+
+                        <br><a href="#" class="btn btn-sm btn-outline-primary mt-2">View details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Forfaits pour Singapour -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSingapore">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSingapore" aria-expanded="false" aria-controls="collapseSingapore">
+                        Futurism & Nature – 5 Days in Singapore
+                    </button>
+                </h2>
+                <div id="collapseSingapore" class="accordion-collapse collapse" aria-labelledby="headingSingapore"
+                    data-bs-parent="#accordionTours">
+                    <div class="accordion-body">
+                        Explore Marina Bay Sands, Gardens by the Bay, Sentosa Island and city rooftops. 5-star
+                        accommodation and culinary tours included.
+
+                        <br><a href="#" class="btn btn-sm btn-outline-primary mt-2">View details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Forfaits pour Le Cap -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingCap">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseCap" aria-expanded="false" aria-controls="collapseCap">
+                        Adventure & Relaxation – 8 Days in Cape Town, South Africa
+                    </button>
+                </h2>
+                <div id="collapseCap" class="accordion-collapse collapse" aria-labelledby="headingCap"
+                    data-bs-parent="#accordionTours">
+                    <div class="accordion-body">
+                        Hike Table Mountain, enjoy wine tasting in Stellenbosch, visit Robben Island, and go on a day
+                        safari nearby.
+
+                        <br><a href="#" class="btn btn-sm btn-outline-primary mt-2">View details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container contact mt-5" id="contact">
+        <h1 class="text-center mb-4">Contact Us</h1>
+
+        <div class="card-form col-md-6 offset-md-3 p-4">
+            <form action="" method="post">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name"
+                        required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com"
+                        required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <select class="form-select" id="destination" name="destination" required>
+                        <option value="" selected disabled>-- Select a destination --</option>
+                        <option value="shibuya">Shibuya, Japon</option>
+                        <option value="singapore">Singapour</option>
+                        <option value="capetown">Le Cap, Afrique du Sud</option>
+                        <option value="marrakech">Marrakech, Maroc</option>
+                        <option value="tanzania">Tanzanie (Safari)</option>
+                        <option value="seychelles">Seychelles</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="5"
+                        placeholder="Write your message here..." required></textarea>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-dark px-5">
+                        <i class="fa-solid fa-paper-plane me-2"></i>Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+    <footer class="container-fluid text-center mt-5">
+        <a id="topButton" class="fa-solid fa-arrow-up" href="#hero"></a>
+        <div class="row d-flex justify-content-between">
+            <h3 class="col-md-3">World Village</h3>
+            <div class="col-md-3 ">
+                <h5>Follow us:</h5>
+                <a href="https://www.linkedin.com/in/sylvestre-ibombo-gakosso-568510220/" target="_blank"
+                    class="fa-brands fa-linkedin mx-2"></a>
+                <a href="https://github.com/Sylviedistribution " target="_blank" class="fa-brands fa-github  mx-2"></a>
+                <a href="https://www.instagram.com/igs397/?hl=fr" target="_blank"
+                    class="fa-brands fa-instagram  mx-2"></a>
+
+            </div>
+        </div>
+        <p>&copy; Copyright 2025 | IBOMBO GAKOSSO Sylvestre. All right reserved</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
