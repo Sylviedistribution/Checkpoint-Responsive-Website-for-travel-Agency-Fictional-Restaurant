@@ -80,7 +80,7 @@ header nav a:hover {
 
 #en-tete {
    background: transparent;
-   z-index: 1;
+  z-index: 1000;
   }
 
 /* Style après scroll */
