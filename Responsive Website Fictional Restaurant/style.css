@@ -61,16 +61,19 @@ textarea:focus {
 
 /* Header */
 header {
-  font-size: 25px;  
+  font-size: 25px;
+  
 }
 
 header.scrolled {
+  
   background: rgba(26, 26, 26, 0.807); /* ou toute autre couleur */
   backdrop-filter: blur(10px);    /* optionnel pour effet verre dépoli */
 }
 
 header nav a {
   text-decoration: none;
+ 
 }
 
 header nav a:hover {
@@ -79,9 +82,9 @@ header nav a:hover {
 }
 
 #en-tete {
-   background: transparent;
+  background: transparent;
   z-index: 1000;
-  }
+}
 
 /* Style après scroll */
 #en-tete.scrolled {
